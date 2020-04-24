@@ -1,0 +1,26 @@
+.item-avatar  {
+  width:100% !important;
+  height : 100% !important;
+  max-width: 300px !important;  //any size
+  max-height: 300px !important; //any size
+}
+.cv-m-auto{
+  margin: auto !important;
+}
+.cv-w100 {
+  width:100% !important;
+}
+@media screen and (max-width: 600px) {
+  .d-sm-n{
+    display: none;
+
+  }
+}
+.cv-h100 {
+  width:100% !important;
+}
+.cv-align-center{
+  width:100% !important;
+  height : 100% !important;
+  margin: auto !important;
+}

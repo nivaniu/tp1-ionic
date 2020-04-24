@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar color="primary" class="ion-text-center">
+    <ion-title>Me</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<app-avatar></app-avatar>
+<ion-list >
+  <app-cathegory *ngFor="let page of pages" [page]="page"></app-cathegory>
+</ion-list>
+</ion-content>

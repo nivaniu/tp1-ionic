@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar color="primary" class="ion-text-center">
+    <ion-buttons slot="start"><ion-back-button defaultHref="/main"></ion-back-button></ion-buttons>
+    <ion-title>{{pages.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <app-avatar></app-avatar>
+  <ion-list >
+    <app-cathegory *ngFor="let page of pages.pages" [page]="page"></app-cathegory>
+  </ion-list>
+</ion-content>
