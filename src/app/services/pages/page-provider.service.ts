@@ -291,18 +291,18 @@ export class PageProviderService {
             link: 'professional-experience',
             title: 'Professional Experience',
             pages: [{
-                link: 'axigate',
-                title: 'Axigate',
+                link: 'my-work',
+                title: 'My work',
                 pages: [{
-                    link: 'about',
+                    link: 'my-work-about',
                     title: 'About',
                     pages: null
                 }, {
-                    link: 'my-role',
+                    link: 'my-work-role',
                     title: 'Role',
                     pages: null
                 }, {
-                    link: 'tasks',
+                    link: 'my-work-tasks',
                     title: 'Tasks',
                     pages: null
                 }]
@@ -343,6 +343,10 @@ export class PageProviderService {
 
     public getProfInfo() {
         return this.getMainPages()[5];
+    }
+
+    public getMyWorkInfo() {
+        return this.getProfInfo().pages[0];
     }
 
     public getSkillsInfo() {

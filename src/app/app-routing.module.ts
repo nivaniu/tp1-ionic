@@ -102,6 +102,22 @@ const routes: Routes = [
     path: 'websites',
     loadChildren: () => import('./pages/websites/websites.module').then( m => m.WebsitesPageModule)
   },
+  {
+    path: 'my-work-about',
+    loadChildren: () => import('./pages/my-work-about/my-work-about.module').then( m => m.MyWorkAboutPageModule)
+  },
+  {
+    path: 'my-work-role',
+    loadChildren: () => import('./pages/my-work-role/my-work-role.module').then( m => m.MyWorkRolePageModule)
+  },
+  {
+    path: 'my-work-tasks',
+    loadChildren: () => import('./pages/my-work-tasks/my-work-tasks.module').then( m => m.MyWorkTasksPageModule)
+  },
+  {
+    path: 'my-work',
+    loadChildren: () => import('./pages/my-work/my-work.module').then( m => m.MyWorkPageModule)
+  },
 ];
 
 @NgModule({
